@@ -72,7 +72,7 @@ img
      }
    .container hero
      {
-       text-align: left;
+       text-align: center;
        display:block;
        position: relative;
      }
@@ -157,7 +157,7 @@ header nav ul > li.btn-outline:hover > a
   }
 header .hero
   {
-    max-width: 500px;
+    width: 500px;
     float: left;
     padding:20px 60px;
     border: 2px
