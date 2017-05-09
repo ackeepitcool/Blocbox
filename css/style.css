@@ -45,11 +45,19 @@ p
   }
 .one-half, .one-third, .one-fourth
   {
-     width:96%;
+     /*width:96%;*/
      float:left;
      position:relative;
      min-height: 1px;
      margin:0 2% 20px;
+  }
+
+.rt-half 
+  {
+    float: right;
+    position:relative;
+    min-height: 1px;
+    margin:0 2% 20px;
   }
 
 @media all (min-width: 768px)
