@@ -1,7 +1,7 @@
 # Blocbox
 ###### Aaron Chen
 
-For J.Chau
+For J.Chau:
 
 Adjust header size to stay in line for mobile
 
