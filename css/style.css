@@ -117,6 +117,10 @@ img
      {
        width:1300px
      }
+     header .hero
+       {
+         width: 500px;
+       }
   }
 
 
@@ -165,7 +169,7 @@ header nav ul > li.btn-outline:hover > a
   }
 header .hero
   {
-    width: 500px;
+    /*width: 500px;*/
     float: left;
     padding:20px 60px;
     border: 2px
