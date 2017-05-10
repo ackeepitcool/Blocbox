@@ -56,12 +56,20 @@ img
     margin:0 2% 20px;
   }
 
-.rt-half, .one-third
+.one-third
   {
     float: right;
     position:relative;
     min-height: 1px;
     margin:0 2% 20px;
+  }
+.rt-half
+  {
+    float: left;
+    position:relative;
+    min-height: 1px;
+    margin:0 2% 20px;
+    padding-left:27.5%;
   }
 
 @media all (min-width: 768px)
@@ -87,7 +95,7 @@ img
     {
       width:46%;
     }
-   .one-third
+   .one-third, .three-third
     {
       width:29.33333%;
     }
@@ -233,7 +241,7 @@ header .heroimage img
   {
     float:left
   }
-.benefits .one-third
+.benefits .one-third, .three-third
 {
   margin-top:9%;
 }
@@ -408,6 +416,13 @@ footer
     position: relative;
     overflow: hidden;
     z-index: 0;
+  }
+.three-third
+  {
+    float: right;
+    position:relative;
+    min-height: 1px;
+    margin:0 2% 20px;
   }
 footer nav ul
   {
