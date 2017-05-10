@@ -58,7 +58,7 @@ img
 
 .one-third
   {
-    float: right;
+    float: left;
     position:relative;
     min-height: 1px;
     margin:0 2% 20px;
