@@ -591,7 +591,9 @@ footer ul
   margin-right:8px;
 }
 
-.left-nav .active li a i { color: #F7931E; }
+.left-nav ul li a .active {
+  color:#F7931E;
+}
 
 
 
