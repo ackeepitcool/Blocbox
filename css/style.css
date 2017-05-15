@@ -590,7 +590,10 @@ footer ul
   text-align: center;
   margin-right:8px;
 }
+
 .left-nav .active li a i { color: #F7931E; }
+
+
 
 /* ACCOUNT SETTINGS */
  .settings {
@@ -660,9 +663,6 @@ footer ul
    overflow: hidden;
    padding:20px;
  }
-
-
-
 
  /* Larger Mobile Devices */
  @media (min-width:460px) {
