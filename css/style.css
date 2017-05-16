@@ -542,14 +542,44 @@ footer ul
   background:#F7F7F7;
 }
 .left-nav {
-  height: 100vh;
-  width:14.66666667%;
-  color:#FFFFFF;
+  height: 100%;
+  width:280px;
+  position:absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-280px,0);
+  -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+  -o-transform: translate(-280px,0); /** Opera **/
+  -moz-transform: translate(-280px,0); /** Firefox **/
+}
+.left-nav.open {
+  display:block;
+  width:280px;
   background: #2E3192;
   background-image: linear-gradient(206deg, #2E3192 0%, #0071BC 94%);
-  /*float:left;*/
-  position: fixed;
-  display:block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0); /** Chrome & Safari **/
+  -o-transform: translate(0,0); /** Opera **/
+  -moz-transform: translate(0,0); /** Firefox **/
+  z-index: 100;
+}
+.hamburger {
+  position:absolute;
+  z-index: 1000;
+  background:#2E3192;
+  color:#FFF;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  left: 5px;
+  top: 15px;
 }
 .left-nav .site-logo {
   padding:20px 0;
@@ -557,6 +587,7 @@ footer ul
   text-align: center;
 }
 .left-nav .btn {
+  list-style: none;
   margin:0 10% 10% 10%;
   padding:20px 0 20px;
   display:block;
@@ -591,8 +622,14 @@ footer ul
   margin-right:8px;
 }
 
-.left-nav ul li a .active {
+/*.left-nav ul li a .active {
   color:#F7931E;
+}*/
+
+a.activePage {
+  text-decoration-color:#F7931E;
+  border-bottom:solid;
+  border-width: 2px;
 }
 
 
@@ -712,7 +749,6 @@ footer ul
      width:23%;
      margin:0 1% 25px;
    }
- }
  .item-box > img {
    position:absolute;
    height:100%;
@@ -745,3 +781,28 @@ footer ul
    line-height: 18px;
    margin:5px 0 0;
  }
+ .left-nav {
+   height: 100vh;
+   width:14.66666667%;
+   color:#FFFFFF;
+   background: #2E3192;
+   background-image: linear-gradient(206deg, #2E3192 0%, #0071BC 94%);
+   float:left;
+   position: fixed;
+   display:block;
+   transform: translate(0,0);
+   -webkit-transform: translate(0,0); /** Chrome & Safari **/
+   -o-transform: translate(0,0); /** Opera **/
+   -moz-transform: translate(0,0); /** Firefox **/
+ }
+ .left-nav.open {
+   width:14.66666667%;
+   transform: translate(0,0);
+   -webkit-transform: translate(0,0); /** Chrome & Safari **/
+   -o-transform: translate(0,0); /** Opera **/
+   -moz-transform: translate(0,0); /** Firefox **/
+ }
+ .hamburger {
+   display:none;
+ }
+}
