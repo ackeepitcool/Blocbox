@@ -637,11 +637,9 @@ footer ul
   color:#F7931E;
 }*/
 
-a.activePage
+.left-nav .items ul li a.activePage
 {
   color:#F7931E;
-  border-bottom:solid;
-  border-width: 2px;
 }
 
 /* ACCOUNT SETTINGS */
